@@ -1,0 +1,27 @@
+{
+  "name": "randomviewport",
+  "version": "1.0.0",
+  "description": "Get a random viewport from different devices",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manu200476/random-viewport.git"
+  },
+  "keywords": [
+    "viewport",
+    "scraping",
+    "puppetter",
+    "scrape",
+    "random",
+    "viewport"
+  ],
+  "author": "Manuel Martin Morante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manu200476/random-viewport/issues"
+  },
+  "homepage": "https://github.com/Manu200476/random-viewport#readme"
+}
