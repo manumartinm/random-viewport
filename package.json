@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "tests": "jest --config jest.config.js"
+    "tests": "jest --config jest.config.js",
+    "linter": "eslint . --ext .js",
+    "linter:fix": "eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/Manu200476/random-viewport/issues"
   },
-  "homepage": "https://github.com/Manu200476/random-viewport#readme"
+  "homepage": "https://github.com/Manu200476/random-viewport#readme",
+  "devDependencies": {
+    "eslint": "^8.5.0"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "^25.3.2"
+  }
 }
