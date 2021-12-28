@@ -8,7 +8,7 @@ describe("test for the random function", () => {
 
 describe("test the properties of the return object", () => {
     test("should return a json containing a user agent, width and height", () => {
-        expect(random()).toHaveProperty("user_agent");
+        expect(random()).toHaveProperty("userAgent");
         expect(random()).toHaveProperty("width");
         expect(random()).toHaveProperty("height");
     });
@@ -19,6 +19,6 @@ describe("test the properties of the return object", () => {
         expect(typeof(random().height)).toBe("number");
     });
     test("typeof user agent should be a string", () => {
-        expect(typeof(random().user_agent)).toBe("string");
+        expect(typeof(random().userAgent)).toBe("string");
     });
 })

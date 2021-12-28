@@ -7,6 +7,4 @@ const random = () => {
     return viewportsArray[randomIndex]
 }
 
-console.log(random("ccruh"))
-
 module.exports = { random }
