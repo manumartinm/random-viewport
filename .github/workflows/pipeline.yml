@@ -31,7 +31,7 @@ jobs:
       - name: Intall Dependencies
         run: npm ci
       - name: Tests
-        run: npm run tests
+        run: npm run jest
   
   linter:
     runs-on: ubuntu-20.04
@@ -51,6 +51,7 @@ jobs:
 
   publish-to-npm:
     runs-on: ubuntu-20.04
+    needs: tests
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
@@ -63,6 +64,6 @@ jobs:
       - name: Intall Dependencies
         run: npm ci
       - name: Publish to Npm
-        run: npm publish --access public
+        uses: JS-DevTools/npm-publish@v1
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          token: ${{ secrets.NPM_TOKEN }}

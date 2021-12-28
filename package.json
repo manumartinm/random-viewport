@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "tests": "jest --config jest.config.js",
+    "jest": "jest --config jest.config.js",
     "linter": "eslint . --ext .js",
     "linter:fix": "eslint . --ext .js --fix"
   },
