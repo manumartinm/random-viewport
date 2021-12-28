@@ -7,4 +7,4 @@ const random = () => {
     return viewportsArray[randomIndex]
 }
 
-export default { random }
+module.exports = { random }
