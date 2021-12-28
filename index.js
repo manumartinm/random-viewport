@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+const { readFileSync } = require('fs')
 
 const random = () => {
     const viewports = readFileSync('./viewports.json')
@@ -6,5 +6,7 @@ const random = () => {
     const randomIndex = Math.floor(Math.random() * viewportsArray.length)
     return viewportsArray[randomIndex]
 }
+
+console.log(random("ccruh"))
 
 module.exports = { random }

@@ -4,7 +4,8 @@
   "description": "Get a random viewport from different devices",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js"
+    "start": "node index.js",
+    "tests": "jest --config jest.config.js"
   },
   "repository": {
     "type": "git",
