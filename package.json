@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "jest": "jest --config jest.config.js",
+    "tests": "jest --config jest.config.js",
     "linter": "eslint . --ext .js",
     "linter:fix": "eslint . --ext .js --fix"
   },
@@ -31,6 +31,7 @@
     "eslint": "^8.5.0"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^25.3.2"
+    "eslint-plugin-jest": "^25.3.2",
+    "jest": "^27.4.5"
   }
 }

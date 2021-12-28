@@ -31,7 +31,7 @@ jobs:
       - name: Intall Dependencies
         run: npm ci
       - name: Tests
-        run: npm run jest
+        run: npm run tests
   
   linter:
     runs-on: ubuntu-20.04
@@ -46,7 +46,7 @@ jobs:
           node-version: 16
       - name: Intall Dependencies
         run: npm ci
-      - name: Tests
+      - name: Linter
         run: npm run linter
 
   publish-to-npm:
